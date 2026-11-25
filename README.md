@@ -32,7 +32,7 @@ Sistema útil para personalización de miniaturas de canciones (sacando el poten
 - PHP: 8.5
 - Composer: 2.10
 - Laravel: 13
-- Liveware: próximamente
+- Livewire: próximamente
 - Kotlin: próximamente
 
 ## Estado
