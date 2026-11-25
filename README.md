@@ -1,58 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎵 Pistas
+Sistema para personalización de descripciones y ajustes de archivos mp3
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## El Problema
+La personalización de archivos en mp3 suele ser un proceso largo y agobiante, en muchas ocasiones para que quede de manera más fiel se realiza el siguiente proceso: 
+- Se busca la carátula en la red
+- Se usa una aplicación para ajustar las dimensiones de la misma
+- Se utiliza otra para redimensionar la misma imagen 
+- Se requiere una extra para cambiar etiquetas, agregar la carátula y recortar el archivo a un inicio o final quitando anuncios, presentaciones del artista o solo segundos largos de silencio
 
-## About Laravel
+Esto aplicado solo a 1 canción, replicando el proceso para decenas de canciones, llegando a cientos en ocasiones.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## La Propuesta
+Sistema útil para personalización de miniaturas de canciones (sacando el potencial en carátulas tipo youtube o usando carátulas por álbumes), descripciones, verificación de kbps reales y recorte de archivos formato mp3 para su uso en dispositivos similares a mp3 o dispositivos android.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Funciones planeadas
+- [x] v0.1 Esqueleto: proyecto, Git, GitHub, README
+- [ ] v0.2 Cimientos de funcionalidad canciones
+- [ ] v0.3 Cimientos de funcionalidad de artistas y álbumes
+- [ ] v0.4 Prueba inicial de MP3, verificación de kbps y escritura de etiquetas
+- [ ] v0.5 Funcionalidad de Portadas Automáticas: recorte cuadrado y reducción al 90% si es rectangular tipo youtube o ajustes si es tipo álbum
+- [ ] v0.6 Funcionalidad de corte de audio
+- [ ] v0.7 Login, roles, búsqueda, filtros y paginación
+- [ ] v0.8 Autocompletado con Servicio MusicBrainz para etiquetas
+- [ ] v0.9 API REST documentada y pruebas
+- [ ] v0.10 Conexión para App: biblioteca sin internet y reproductor
+- [ ] v1.0 Publicado en línea, con notificaciones, capturas y README final
+- [ ] v1.1 Detección de calidad falsa de kbps en archivos mp3
+- [ ] v1.2 Fase Inicial de Mantenimiento
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tecnologías
+- PHP: 8.5
+- Composer: 2.10
+- Laravel: 13
+- Liveware: próximamente
+- Kotlin: próximamente
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Estado
+Versión Actual: v0.1
